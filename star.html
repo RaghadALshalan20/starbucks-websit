@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>starbucks</title>
+    <link rel="stylesheet" href="star.css">
+</head>
+
+<body>
+
+    <section>
+        <div class="circle"></div>
+        <header>
+            <a href="#"><img src="logo1.jpg" class="logo" /></a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">What's New</a></li>
+                <li><a href="#">Content</a></li>
+            </ul>
+        </header>
+        <!-- the main content -->
+        <div class="content">
+            <div class="textBox">
+                <h2>it's not just coffee <br> it' <span>starbucks</span></h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui quos in,
+                    numquam doloremque quasi soluta ullam totam amet culpa? Pariatur numquam,
+                    incidunt tempore veritatis amet aspernatur sapiente aliquid deserunt?
+                    Laudantium?</p><a href="#">Learn more</a>
+            </div>
+            <div class="imgBox">
+                <img src="D1.jpg" class="starbucks" />
+            </div>
+        </div>
+        <ul class="thumb">
+            <li> <img src="D1.jpg" onclick="imgSlider('D1.jpg');changeCi('#016143')" /> </li>
+            <li> <img src="D2.jpg" onclick="imgSlider('D2.jpg');changeCi('#eb7495')" /> </li>
+            <li> <img src="D3.jpg" onclick="imgSlider('D3.jpg');changeCi('#d752b1')" /> </li>
+        </ul>
+
+    </section>
+    <!-- javascript to make page  dynmic  -->
+    <script type="text/javascript">
+
+        function imgSlider(any) {
+            document.querySelector('.starbucks').src = any
+        }
+        function changeCi(color) {
+            const circle = document.querySelector('.circle');
+            circle.style.background = color;
+        }
+
+    </script>
+</body>
+
+</html>
